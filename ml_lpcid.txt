@@ -1,0 +1,4 @@
+
+1) Make windowing adaptive for low‐fs data
+2) Ensure non-empty splits and batches
+3) Guard against empty loop aggregation

@@ -1,0 +1,17 @@
+{
+  "method": "lpcid",
+  "model": "NPSSL",
+  "classification_accuracy": null,
+  "regression_MAE": null,
+  "regression_RMSE": null,
+  "regression_R2": null,
+  "forecast_MAE": 1.271575927734375,
+  "forecast_RMSE": 4.812716484069824,
+  "forecast_R2": 0.7330543940982627,
+  "residual_mean": 104.36055755615234,
+  "residual_std": 497.8342590332031,
+  "residual_norm_mean": 0.42794209718704224,
+  "residual_norm_std": 0.44874221086502075,
+  "residual_acc_mean": 104.31499481201172,
+  "residual_acc_std": 497.392333984375
+}

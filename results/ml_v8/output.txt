@@ -1,0 +1,41 @@
+[LPCID] Loading real data from: D:\_Education\2025-2026\PFE\ViscoelasticVibration\ExperimentalWork\datasets\LPCID\prepped
+[LPCID] Adapted windowing: W=32, H=8, stride=8
+[LPCID] windows after adaptation: 82
+[LPCID] dt ≈ 0.573333 s (fs ≈ 1.74 Hz), windows=82
+[LPCID] batch sizes -> train:16, val:12, test:13
+[lpcid] epoch 01 train=292.6634 val=342.7124 core=342.6974
+[lpcid] epoch 02 train=256.9283 val=307.6786 core=307.6638
+[lpcid] epoch 03 train=197.9332 val=240.4095 core=240.3947
+[lpcid] epoch 04 train=70.4733 val=169.6097 core=169.5949
+[lpcid] epoch 05 train=37.3669 val=189.1027 core=189.0880
+[lpcid] epoch 06 train=81.9591 val=177.6296 core=177.6150
+[lpcid] epoch 07 train=36.9577 val=164.2667 core=164.2520
+[lpcid] epoch 08 train=21.2685 val=172.5894 core=172.5749
+[lpcid] epoch 09 train=20.4928 val=162.0963 core=162.0765
+[lpcid] epoch 10 train=16.8531 val=161.3458 core=161.3208
+[lpcid] epoch 11 train=15.1116 val=165.6642 core=165.6341
+[lpcid] epoch 12 train=14.8951 val=162.7260 core=162.6908
+[lpcid] epoch 13 train=13.8040 val=160.5014 core=160.4611
+[lpcid] epoch 14 train=12.0418 val=163.6134 core=163.5682
+[lpcid] epoch 15 train=11.6959 val=158.5877 core=158.5375
+[lpcid] epoch 16 train=12.1026 val=161.6109 core=161.5558
+[lpcid] epoch 17 train=11.1497 val=159.1107 core=159.0507
+[lpcid] epoch 18 train=10.6541 val=158.6503 core=158.5856
+[lpcid] epoch 19 train=10.4870 val=157.1162 core=157.0467
+[lpcid] epoch 20 train=10.7105 val=157.8275 core=157.7534
+[lpcid] epoch 21 train=10.5608 val=156.6311 core=156.5524
+[lpcid] epoch 22 train=10.3097 val=157.1692 core=157.0859
+[lpcid] epoch 23 train=10.2914 val=157.7898 core=157.7020
+[lpcid] epoch 24 train=10.2789 val=157.2543 core=157.1622
+[lpcid] epoch 25 train=10.2863 val=157.9403 core=157.8439
+[lpcid] epoch 26 train=10.5399 val=160.4523 core=160.3513
+[lpcid] epoch 27 train=10.3677 val=157.9243 core=157.8187
+[lpcid] epoch 28 train=10.7434 val=157.9408 core=157.8305
+[lpcid] epoch 29 train=10.4773 val=159.1464 core=159.0315
+[lpcid] epoch 30 train=10.2509 val=156.5378 core=156.4182
+d:\_Education\2025-2026\PFE\ViscoelasticVibration\ExperimentalWork\ml_v8_lpcid_reviewer.py:509: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(best_path, map_location=device)["model"])
+C:\venvs\yolo\lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+[LPCID] Done. NPSSL trained/evaluated on real data; artifacts saved under results/ml_v8_lpcid.
