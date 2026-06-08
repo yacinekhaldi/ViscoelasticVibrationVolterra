@@ -133,7 +133,7 @@ If you use this repository in your research, please cite:
 ```bibtex
 @article{khaldi2026learning,
   title   = {Learning Memory Kernels in Second-Order Volterra Models: A Data-Driven Approach for Viscoelastic Systems},
-  author  = {Khaldi, Yacine and Coauthors},
+  author  = {Khaldi, Yacine; Belaifa, Meriem; Benzaoui, Amir},
   journal = {Mechanics of Time-Dependent Materials},
   year    = {2026},
   doi     = {DOI_HERE}
