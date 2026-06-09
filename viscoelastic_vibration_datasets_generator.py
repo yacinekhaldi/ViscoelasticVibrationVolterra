@@ -1,26 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-viscoelastic_vibration_datasets_generator.py
---------------------------------------------
-Generates the *shared* experimental configuration and data used by both:
-  • numerical solvers (now), and
-  • future ML code (later).
-
-It writes:
-  ./datasets/synthetic/forcing.npy        # the forcing vector f[n] used for ALL kernels
-  ./datasets/synthetic/forcing.csv        # same as CSV (for quick inspection)
-  ./datasets/synthetic/manifest.json      # single source of truth (N, fs, seeds, kernels, ω, forcing hash)
-
-Also saves per-kernel parameters (for human check):
-  ./datasets/synthetic/<kernel_name>_kernel_params.csv
-  ./datasets/synthetic/<kernel_name>_kernel_curve.png
-
-IMPORTANT:
-  • Do NOT regenerate new kernels or forcing in other scripts—always read manifest+forcing.
-  • This guarantees numerical solvers and ML will use the *exact* same setup.
-"""
-
 from __future__ import annotations
 import os, json, pathlib
 import numpy as np
