@@ -1,36 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-analyze_per_kernel.py
----------------------
-Reads arrays exported by ml_solver_v2.py and produces:
-  • per-kernel CSV with residual (raw/normalized/acc), forecast, regression, and classification stats
-  • bar plots for residuals (raw / normalized / acc), forecast RMSE, regression RMSE, and per-kernel recall
-
-Inputs (expected in ./results/ml/arrays):
-  - y_true_forecast.npy          [N, H]
-  - y_pred_forecast.npy          [N, H]
-  - a_true.npy                   [N, M]
-  - a_pred.npy                   [N, M]
-  - cls_true.npy                 [N]
-  - cls_pred.npy                 [N]
-  - residuals.npy                [N, W2]                 (raw residuals used in plots)
-  - residuals_normalized.npy     [N, W2]   (optional)
-  - residuals_acc.npy            [N, W2]   (optional)
-
-Also reads:
-  - ./results/ml/confusion_matrix.csv   (to fetch kernel names for labeling)
-
-Outputs (under ./results/ml/analysis):
-  - per_kernel_metrics.csv
-  - bars_residual_std_raw.png
-  - bars_residual_std_norm.png          (if residuals_normalized.npy exists)
-  - bars_residual_std_acc.png           (if residuals_acc.npy exists)
-  - bars_forecast_rmse.png
-  - bars_regression_rmse.png
-  - bars_per_kernel_recall.png
-"""
-
 from __future__ import annotations
 import numpy as np
 import pandas as pd
