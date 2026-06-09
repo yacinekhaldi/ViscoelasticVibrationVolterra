@@ -130,13 +130,21 @@ Generated metrics, predictions, and plots are saved in the `results/` directory.
 
 If you use this repository in your research, please cite:
 
+Khaldi, Y., Belaifa, M. & Benzaoui, A. Learning memory kernels in second-order Volterra models: a data-driven approach for viscoelastic systems. Mech Time-Depend Mater 30, 42 (2026). https://doi.org/10.1007/s11043-026-09890-4
+
 ```bibtex
-@article{khaldi2026learning,
-  title   = {Learning Memory Kernels in Second-Order Volterra Models: A Data-Driven Approach for Viscoelastic Systems},
-  author  = {Khaldi, Yacine; Belaifa, Meriem; Benzaoui, Amir},
+@article{Khaldi2026,
+  title = {Learning memory kernels in second-order Volterra models: a data-driven approach for viscoelastic systems},
+  volume = {30},
+  ISSN = {1573-2738},
+  url = {http://dx.doi.org/10.1007/s11043-026-09890-4},
+  DOI = {10.1007/s11043-026-09890-4},
+  number = {2},
   journal = {Mechanics of Time-Dependent Materials},
-  year    = {2026},
-  doi     = {DOI_HERE}
+  publisher = {Springer Science and Business Media LLC},
+  author = {Khaldi,  Yacine and Belaifa,  Meriem and Benzaoui,  Amir},
+  year = {2026},
+  month = June 
 }
 ```
 
