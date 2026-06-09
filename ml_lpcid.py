@@ -1,28 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-ml_solver_v8.py (LPCID real-data edition)
------------------------------------------
-Evaluates the NPSSL pipeline on real LPCID free-vibration data sitting in:
-    ./datasets/LPCID/prepped/*.csv
-Each CSV must have columns: time, f, u, v, a, H_hat
-We map them to the internal convention: [forcing, disp, vel, acc, hist].
-
-What stays the same:
-  • Model: Causal TCN encoder + NPSSL + heads
-  • Physics residual, omega estimation, curriculum, logging, exports
-  • Windowing defaults (W=512, H=64, stride=32)
-  • Export structure (metrics, arrays, plots)
-
-What’s different for real data:
-  • No class labels, no ground-truth amplitudes → set their loss weights to 0.0
-  • Single “method” slot called "lpcid" (no synthetic solver variants)
-  • Confusion-matrix and per-kernel tables are skipped
-  • Output root: ./results/ml_v8_lpcid
-
-This file is adapted to your v8 pipeline while redirecting the dataset to LPCID.
-"""
-
 from __future__ import annotations
 import os, json, math, pathlib, random, sys, glob, re
 from typing import Tuple, Dict, Any, List
