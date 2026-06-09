@@ -1,14 +1,3 @@
-# prep_lpcid_to_npSSL_hardcoded.py
-# --------------------------------
-# Preprocess LPCID free-vibration Excel files into NPSSL-ready series:
-#   columns: time, f, u, v, a, H_hat
-# Optional: export sliding windows X=[f,u,v,a,H_hat], Y=future u
-#
-# How to use:
-#   python prep_lpcid_to_npSSL_hardcoded.py
-#
-# Tune the constants in the CONFIG section below.
-
 import os, re, glob
 import numpy as np
 import pandas as pd
