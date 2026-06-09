@@ -701,8 +701,6 @@ def run_experiment():
         plt.savefig(ML_ROOT / f"loss_curves__{METHOD_FOR_DATA}.png"); plt.close()
 
         # ----------------- TEST (NPSSL) -----------------
-        # (Identical to your v7 test section; writes the same arrays/plots
-        #  but now with method suffix to avoid overwriting.)
         def _suffix(name: str) -> pathlib.Path: return (ML_ROOT / name).with_name(f"{(ML_ROOT / name).stem}__{METHOD_FOR_DATA}{(ML_ROOT / name).suffix}")
 
         if best_path.exists():
@@ -1013,7 +1011,7 @@ def run_experiment():
     # ========================
     df_all = pd.DataFrame(rows_all_methods)
     df_all.to_csv(ML_ROOT / "analysis" / "per_method_metrics.csv", index=False)
-    # A condensed SOTA-like CSV (use in your paper table)
+    # A condensed SOTA
     cols = ["method","model","forecast_RMSE","classification_accuracy","regression_RMSE","residual_norm_std"]
     df_all[cols].to_csv(ML_ROOT / "analysis" / "sota_like_table.csv", index=False)
 
