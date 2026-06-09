@@ -1,15 +1,3 @@
-# core_experiment.py
-# --------------------------------------------------------------------------------------
-# Single source of truth for your experiments:
-#   • build_five_kernels(fs, rng): returns the 5 kernels (with comments & parameters)
-#   • generate_forcing(N, fs, rng): common forcing generator
-#   • prony_from_log_rates(...): approximates stretched-exponential & power-law kernels
-#   • hash_array_sha256(x): robust reproducibility check for forcing
-#   • make_manifest(path, ...): writes all params/kernels/seeds + forcing hash to JSON
-#
-# Both numerical solvers and ML pipelines should import from this file so they share
-# *exactly* the same kernels, forcing process, and parameters.
-# --------------------------------------------------------------------------------------
 
 from __future__ import annotations
 import json, hashlib, math
